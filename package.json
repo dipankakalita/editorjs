@@ -1,5 +1,5 @@
 {
-  "name": "editorjs",
+  "name": "editor",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
