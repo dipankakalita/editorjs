@@ -100,7 +100,7 @@ export class HomeComponent implements OnInit {
     this.editor
       .save()
       .then((outputData) => {
-        console.log('HTML data: ',  parser.parse(outputData));
+        console.log('HTML data: ',  outputData);
         
       }).catch((error) => {
         console.log('Saving failed: ', error);

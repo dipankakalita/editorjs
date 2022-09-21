@@ -18,6 +18,19 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/editorjs",
+            "allowedCommonJsDependencies": [
+              "simple-image-editorjs",
+              "editorjs-text-alignment-blocktune",
+              "editorjs-drag-drop",
+              "@editorjs/paragraph",
+              "@editorjs/Header",
+              "@editorjs/attach",
+              "@editorjs/list",
+              "@editorjs/link",
+              "@editorjs/editorjs",
+              "@editorjs/attaches"
+
+            ],
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -37,8 +50,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
